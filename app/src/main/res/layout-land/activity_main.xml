@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/logoeducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="edu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_education" />
+
+    <ImageButton
+        android:id="@+id/logohealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:contentDescription="hea"
+        app:layout_constraintStart_toEndOf="@+id/logoeducation"
+        app:layout_constraintTop_toTopOf="@+id/logoeducation"
+        app:srcCompat="@drawable/logo_health" />
+
+    <ImageButton
+        android:id="@+id/logojob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:contentDescription="job"
+        app:layout_constraintStart_toEndOf="@+id/logohealth"
+        app:layout_constraintTop_toTopOf="@+id/logohealth"
+        app:srcCompat="@drawable/logo_job" />
+
+    <ImageButton
+        android:id="@+id/logotransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="trans"
+        app:layout_constraintStart_toStartOf="@+id/logoeducation"
+        app:layout_constraintTop_toBottomOf="@+id/logoeducation"
+        app:srcCompat="@drawable/logo_transport" />
+
+    <ImageButton
+        android:id="@+id/logoemergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:contentDescription="eme"
+        app:layout_constraintStart_toEndOf="@+id/logotransport"
+        app:layout_constraintTop_toBottomOf="@+id/logohealth"
+        app:srcCompat="@drawable/logo_emergency" />
+
+    <ImageButton
+        android:id="@+id/logoabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:contentDescription="about"
+        app:layout_constraintStart_toEndOf="@+id/logoemergency"
+        app:layout_constraintTop_toBottomOf="@+id/logojob"
+        app:srcCompat="@drawable/logo_about" />
+
+</android.support.constraint.ConstraintLayout>
